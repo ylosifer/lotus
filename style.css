@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    background-color: white;
+    border-bottom: 1px black solid;
+}
+
+.logo {
+    width: 120px;
+    margin-left: 20px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin-left: 20px;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 21px;
+    margin-left: 20px;
+    background-color: white; /* White background for burger */
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: black; /* Black lines for visibility */
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.navbar-right a {
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.navbar-right a.cart {
+    padding-right: 10px; /* Optional: add padding for better spacing */
+}
+
+.navbar-right a.profile {
+    padding-left: 10px; /* Optional: add padding for better spacing */
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 60px;
+        background-color: white;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .burger {
+        display: flex;
+    }
+    
+    .nav-links.active {
+        display: flex;
+    }
+
+    .navbar-right {
+        display: none;
+    }
+}
