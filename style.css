@@ -133,6 +133,15 @@ body {
 
 .card p {
     padding: 0 1em;
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+    /* Limit text to 2 lines and add ellipsis */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Number of lines to show */
+    -webkit-box-orient: vertical;
 }
 
 .card-button {
@@ -167,4 +176,58 @@ body {
     z-index: -1;
     opacity: 1;
     /*transition: 0.5s;*/
+}
+
+
+/*================= Footer ===========================================*/
+
+
+footer {
+    background-color: white;
+    color: black;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin: 20px;
+}
+
+.footer-column h4 {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+.footer-column ul li a:hover{
+    color:rgb(125, 144, 97) ;
+}
+.footer-column .social-media a {
+    display: block;
+    margin-bottom: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+.footer-column .social-media a:hover {
+    text-decoration: underline;
 }
