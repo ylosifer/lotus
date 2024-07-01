@@ -290,6 +290,8 @@ footer {
     font-size: 14px;
     color: #3f4715;
     margin-bottom: 10px;
+    font-weight: 550;
+    letter-spacing: 2px;
 }
 
 .footer-column ul {
@@ -305,6 +307,9 @@ footer {
     font-size: 15px;
     text-decoration: none;
     color: #000000;
+    padding-top: 6px;
+    line-height: 170%;
+    letter-spacing: 0.5px;
 }
 
 .social-media {
@@ -344,12 +349,17 @@ footer {
 
 .footer-text {
     text-align: center;
-    padding: 20px 0;
+    padding: 0px 0;
     color: #3F4715;
     font-size: 14px;
 }
 
 .footer-text p {
     margin: 0;
-    line-height: 1.5;
+    line-height: 170%;
+    text-align: left;
+    font-size: 15px;
+    color: #3f4715;
+    font-family: "Lato", sans-serif;
+    padding-left: 1em;
 }
